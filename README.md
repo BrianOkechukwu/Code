@@ -1,2 +1,2 @@
-# Code
+# Image Animation
 All Projects
