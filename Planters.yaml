@@ -1,0 +1,79 @@
+
+---
+### GENERAL CONFIGURATION
+folder: '/Users/macbook/Documents/Decking'
+client_name: 'Planters'
+
+### Select which models are going to be contained
+models:
+  secondary_model: TRUE
+  halo_model: FALSE
+  synergy_model: TRUE
+
+### Configure slide integration with IRI Template in pptx
+slide:
+  doc: 'Template - General.pptx'
+  master_config: 'Template'
+  content_config: 'Content Placeholder 2'
+  layout_config: 'MT'
+
+### Get all the aliases being used in the Margin Templates
+aliases:
+  roi: "ROI  {Incremental MULO Dollars /adj Spend}"
+  effectiveness: "Effectiveness (Vol/Support)"
+  volume: "% Contribution (TOTAL_MULO)"
+  incremental_volume: "Total Volume Contribution (scaled)"
+  support: "Support (TOTAL_MULO)"
+  spending: "Unadjusted Spend (TOTAL_MULO)"
+  metric: "Cost per support (using unadjusted spend)"
+  support_type: "Type_of_Support"
+  multiplier: "Support_multiplier"
+  dollar: "Incremental Dollars {Incremental Volume * Margin}"
+  trade: "TOTAL TRADE: TOTAL_MULO"
+  synergy: "Synergy "
+  total_other_base: 'Total Competitor FSI'
+  trade_metrics:
+    feature_display: "FEATUREDISPLAY"
+    feature: "FEATURE"
+    display: "DISPLAY"
+    tpr: "TPR"
+    anymerch: "AnyMerch"
+    sp_pack: "sp_pack"
+
+### For each geography, indicate all characteristics
+geography:
+  MULO_C:
+    name: 'MULO+C'
+    product: 'Planters'
+    file: 'Planters_MarginTemplate_4thIte_06_09_2023.xlsx'
+    sheet_name: 'PLANTERS (TOTAL_MULO)'
+    data_frame_name: 'Data_MULO'
+    positions:
+        media:
+          first: 'Total NATIONAL TV'
+          last: 'Total SUSTAINBILITY_LF_CLICKS'
+          other: 'Total Synergy'
+        base:
+          first: 'BaseSales'
+          last: 'CompMedia'
+          mask: []
+          other: []
+        trade:
+          first: 'DISPLAY'
+          last: "TPR"
+        remove_drivers: []
+
+### Indicate the files for secondaries
+secondary:
+  MULO:
+    file: 'Planters_MarginTemplate_4thIte_06_09_2023_Decomps_Secs.xlsx'
+    sheet_name: 'PLANTERS (TOTAL_MULO)'
+
+### Indicate all acronyms that will not be converted to Title Format
+acronyms_list: ' OLV$| FSI$| PR$| ATC$| DRTV$| TRPS$| FEP$| TV$|TPR| IRC$| NUPC$' 
+
+
+
+   
+     
+   
